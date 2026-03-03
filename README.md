@@ -1,2 +1,2 @@
 # front-end-labs
-Repositório dos laboratórios da disciplina de front-end [TADS]
+## Repositório dos laboratórios da disciplina de Programação front-end [TADS]
