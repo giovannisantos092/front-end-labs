@@ -1,32 +1,52 @@
-body{
-    color: #333333;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
-}
-h1{
-    background-image: url(../img/img/centro-distribuicao.png);
-    padding: 10px;
-}
-h2{
-    border-bottom: 2px groove #333333;
-    margin-top: 30px;
-}
-figure{
-    background-color: #f2eded;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 15px;
-    margin: 30px;
+:root{
+    /* Paleta tipografica */
+    --font-default: "Datatype", monospace;
+    --font-principal-title: "Archivo Black", sans-serif;
+    --font-secundary-title: "Roboto", sans-serif;
+    --font-secundary-title-wgt: 900;
+    
+    /* Paleta de cores */
+    --color-primary: #333333;
+    --color-bkg-figures: #f2eded;
+    --color-border: #ccc;
 }
 
-figcaption{
-    font-style: italic;
-    margin-top: 10px;
+body {
+  color: var(--color-primary);
+  font-family: var(--font-default);
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
 }
-p{
-    padding: 0 45px;
-    text-indent: 5px;
-    text-align: justify;
+
+h1 {
+  background-image: url(../img/centro-distribuicao.png);
+  padding: 10px;
+  font-family: var(--font-principal-title);
+}
+
+h2 {
+  border-bottom: 2px groove var(--color-primary);
+  margin-top: 30px;
+  font-weight: var(--font-secundary-title-wgt);
+}
+
+figure {
+  background-color: var(--color-bkg-figures);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+  font-family: var(--font-secundary-title);
+}
+
+p {
+  padding: 0 45px;
+  text-indent: 5px;
+  text-align: justify;
 }
