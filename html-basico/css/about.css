@@ -31,9 +31,8 @@ body {
 h1 {
   font-family: var(--font-title-primary);
   padding: 10px;
-  background-size: cover;
-  background-position: center;
-  color: white;
+  /* CORREÇÃO: Linhas de imagem de fundo removidas */
+  color: var(--color-text); /* CORREÇÃO: Alterado para preto para ser visível no fundo branco */
 }
 
 h2 {
@@ -129,3 +128,4 @@ footer img {
   width: 80px;
   margin-right: 20px;
 }
+
