@@ -1,36 +1,60 @@
-/* Sobrescrita de estilos específicos para a página about */
+/* ========================================
+   ABOUT PAGE - Mirror Fashion
+   ======================================== */
 
-h1 {
-  background-image: url(../img/sobre-background.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: var(--space-2);
+/* Estilos específicos da página about que complementam components.css */
+
+.main {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
 }
 
-/* Limpeza de estilos legados */
-#centro-distribuicao {
-  margin: var(--space-4) auto;
-  width: 100%;
-  max-width: 550px;
+.article:first-of-type {
+  margin-top: 0;
 }
 
-#familia-pelho {
-  margin: 0 0 var(--space-3) var(--space-3);
+/* Efeito de hover nas listas */
+.feature-list__item {
+  padding-left: var(--space-3);
 }
 
-/* Clearfix para o layout com float */
-.content-section--with-image::after {
+.feature-list__item::before {
+  content: "→";
+  margin-right: var(--space-1);
+}
+
+.feature-list__item:hover::before {
+  animation: slideRight 0.3s ease forwards;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}
+
+/* Clearfix para elementos flutuantes */
+.article__section::after {
   content: "";
   display: table;
   clear: both;
 }
 
 @media (max-width: 768px) {
-  h1 {
-    padding: var(--space-1);
+  .main {
+    background: #ffffff;
   }
 
-  #centro-distribuicao {
-    max-width: 100%;
+  .intro-section__text {
+    text-indent: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-section__text,
+  .article__text {
+    text-indent: 0;
   }
 }

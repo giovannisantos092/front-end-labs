@@ -3,64 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us - Mirror Fashion</title>
-    <!-- Reset, Design System e Componentes -->
+    <meta name="description" content="Conheça a história e diferenciais da Mirror Fashion, a maior empresa de e-commerce de moda do mundo." />
+    <title>Sobre Nós - Mirror Fashion</title>
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/design-system.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/about.css" />
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Datatype:wdth,wght@50,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Datatype:wdth,wght@50,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   </head>
+  
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container header__container">
-        <img src="img/logo.png" alt="Logomarca da loja" class="header__logo"/>
+        <img src="img/logo.png" alt="Logo da Mirror Fashion" class="header__logo" />
         <h1 class="header__title">Mirror Fashion</h1>
       </div>
     </header>
+
+    <!-- Main Content -->
     <main class="container main">
-      <section>
-        <p class="main__intro">
-          A <span class="main__highlight">Mirror Fashion</span> é a maior empresa de comércio eletrônico no segmento de moda em todo o mundo. Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de participação em 118 deles.
+      <!-- Introdução -->
+      <section class="intro-section">
+        <p class="intro-section__text">
+          A <strong class="intro-section__highlight">Mirror Fashion</strong> é a maior empresa de comércio eletrônico no segmento de moda em todo o mundo. Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de participação em 118 deles.
         </p>
-        <p class="main__intro main__links">
-          Nosso centro de distribuição fica em <a href="https://maps.google.com.br/?q=Jacarezinho" target="_blank" title="Google Maps">Jacarezinho</a>, no Paraná. De lá, saem 48 aviões que distribuem nossos produtos para casas do mundo todo.<br><br>
-          Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em contato se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
+        
+        <p class="intro-section__text">
+          Nosso centro de distribuição fica em <a href="https://maps.google.com.br/?q=Jacarezinho" target="_blank" rel="noopener noreferrer" class="link">Jacarezinho</a>, no Paraná. De lá, saem 48 aviões que distribuem nossos produtos para casas do mundo todo.
         </p>
-        <figure class="figure">
-          <img src="img/centro-distribuicao.png" alt="Centro de distribuição" />
+
+        <p class="intro-section__text">
+          Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html" class="link">nossa loja</a> ou entre em contato se tiver dúvidas. Conheça também nossa <a href="#historia" class="link">história</a> e nossos <a href="#diferenciais" class="link">diferenciais</a>.
+        </p>
+
+        <figure class="figure figure--centered">
+          <img src="img/centro-distribuicao.png" alt="Centro de distribuição em Jacarezinho" class="figure__image" />
           <figcaption class="figure__caption">Centro de Distribuição</figcaption>
         </figure>
       </section>
 
+      <!-- Seção de História -->
       <article class="article">
         <header class="article__header">
           <h2 class="article__title" id="historia">História</h2>
         </header>
+        
         <section class="article__section">
-          <img src="img/familia-pelho.jpg" alt="Família Pelho" class="article__img-float">
-          <p>
+          <figure class="figure figure--float-right">
+            <img src="img/familia-pelho.jpg" alt="Fotografia da Família Pelho, fundadora da Mirror Fashion" class="figure__image" />
+            <figcaption class="figure__caption">Família Pelho</figcaption>
+          </figure>
+
+          <p class="article__text">
             A fundação em 1932 ocorreu no momento da descoberta econômica do interior do Paraná. A família Pelho investiu todas as suas economias nessa nova iniciativa, revolucionária para a época. O fundador <em>Eduardo Simões Pelho</em>, dotado de particular visão administrativa, guiou os negócios durante mais de 50 anos, muitos deles ao lado de seu filho <em>E. S. Pelho Filho</em>, atual CEO. O nome da empresa é inspirado na família.
           </p>
-          <p>
+
+          <p class="article__text">
             O crescimento da empresa foi praticamente instantâneo. Nos primeiros 5 anos, já atendia 18 países, batendo a marca de 100 países em apenas 15 anos de existência. Já atendeu 740 milhões de usuários com bilhões de pedidos.
           </p>
-          <p>
+
+          <p class="article__text">
             O crescimento em número de funcionários também é assombroso. Hoje, é a maior empregadora do Brasil, e após apenas 5 anos já possuía 30 mil funcionários. Fora do Brasil, são 240 mil empregados, além dos 890 mil brasileiros em Jacarezinho e por todo o país.
           </p>
-          <p>
+
+          <p class="article__text">
             Dada a importância econômica da empresa para o Brasil, a família Pelho já recebeu prêmios, homenagens e condecorações. Todos os presidentes do Brasil já visitaram a Mirror Fashion, além de líderes mundiais.
           </p>
         </section>
       </article>
 
+      <!-- Seção de Diferenciais -->
       <article class="article">
         <header class="article__header">
           <h2 class="article__title" id="diferenciais">Diferenciais</h2>
         </header>
+        
         <section class="article__section">
           <ul class="feature-list">
             <li class="feature-list__item">Menor preço do varejo, garantido</li>
@@ -68,19 +92,19 @@
             <li class="feature-list__item">Pague em reais, dólares, euros ou bitcoins</li>
             <li class="feature-list__item">Todas as compras com frete grátis para o mundo todo</li>
             <li class="feature-list__item">Maior comércio eletrônico de moda do mundo</li>
-            <li class="feature-list__item">Atendimento via <a href="tel:+553536298400">telefone</a>, <a href="mailto:loja@loja.com">email</a>, chat, twitter, facebook, carta, fax e telegrama</li>
+            <li class="feature-list__item">Atendimento via <a href="tel:+553536298400" class="link">telefone</a>, <a href="mailto:loja@loja.com" class="link">email</a>, chat, Twitter, Facebook, carta, fax e telegrama</li>
             <li class="feature-list__item">Presente em 124 países</li>
             <li class="feature-list__item">Mais de um milhão de funcionários em todo o mundo</li>
           </ul>
         </section>
       </article>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <img src="img/logo.png" alt="Logomarca da loja" class="footer__logo"/>
-        <p class="footer__text">
-          &copy; Copyright Mirror Fashion
-        </p>
+        <img src="img/logo.png" alt="Logo da Mirror Fashion" class="footer__logo" />
+        <p class="footer__text">&copy; 2026 Copyright Mirror Fashion. Todos os direitos reservados.</p>
       </div>
     </footer>
   </body>

@@ -1,0 +1,97 @@
+/* ========================================
+   DESIGN SYSTEM - Mirror Fashion
+   ======================================== */
+
+   :root {
+    /* ===== TYPOGRAPHY ===== */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Datatype', sans-serif;
+    --font-display: 'Archivo Black', sans-serif;
+  
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+  
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-lg: 1.125rem;     /* 18px */
+    --font-size-xl: 1.5rem;       /* 24px */
+    --font-size-2xl: 2rem;        /* 32px */
+    --font-size-3xl: 2.5rem;      /* 40px */
+  
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.8;
+  
+    /* ===== COLORS ===== */
+    --color-primary: #1a052e;           /* Roxo escuro */
+    --color-secondary: #6c5b7f;         /* Roxo médio */
+    --color-accent: #8b4fc9;            /* Roxo vibrante */
+    --color-link: #0066cc;              /* Azul */
+    --color-link-hover: #0052a3;        /* Azul escuro */
+    
+    --color-white: #ffffff;
+    --color-light: #f5f5f5;
+    --color-gray-light: #e8e8e8;
+    --color-gray-medium: #999999;
+    --color-gray-dark: #333333;
+    --color-dark: #1a1a1a;
+  
+    --color-border: #ddd;
+    --color-bkg-figures: #f9f9f9;
+    --color-base-footer: #666;
+  
+    /* ===== SPACING ===== */
+    --space-1: 0.5rem;    /* 8px */
+    --space-2: 1rem;      /* 16px */
+    --space-3: 1.5rem;    /* 24px */
+    --space-4: 2rem;      /* 32px */
+    --space-5: 2.5rem;    /* 40px */
+    --space-6: 3rem;      /* 48px */
+  
+    /* ===== LAYOUT ===== */
+    --container-width: 100%;
+    --container-max-width: 1200px;
+  
+    /* ===== BORDERS ===== */
+    --border-width: 1px;
+    --border-width-thick: 3px;
+    --border-radius: 4px;
+  
+    /* ===== TRANSITIONS ===== */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+  
+    /* ===== LOGO ===== */
+    --logo-width: 60px;
+    --logo-height: 60px;
+  }
+  
+  /* ===== APLICAÇÃO DE VARIÁVEIS NO BODY ===== */
+  body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+  }
+  
+  em {
+    font-style: italic;
+    color: var(--color-secondary);
+  }
+  
+  strong {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent);
+  }
