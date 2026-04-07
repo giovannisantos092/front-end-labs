@@ -1,60 +1,25 @@
-/* ========================================
-   ABOUT PAGE - Mirror Fashion
-   ======================================== */
+/* Mirror Fashion – Estilos específicos da página Sobre Nós */
 
-/* Estilos específicos da página about que complementam components.css */
-
-.main {
-  background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+/* Layout em duas colunas para a seção de história */
+.c-article-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-6);
+  align-items: start;
 }
 
-.article:first-of-type {
-  margin-top: 0;
+.c-article-grid .c-figure {
+  margin-block: 0;
 }
 
-/* Efeito de hover nas listas */
-.feature-list__item {
-  padding-left: var(--space-3);
-}
-
-.feature-list__item::before {
-  content: "→";
-  margin-right: var(--space-1);
-}
-
-.feature-list__item:hover::before {
-  animation: slideRight 0.3s ease forwards;
-}
-
-@keyframes slideRight {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(4px);
-  }
-}
-
-/* Clearfix para elementos flutuantes */
-.article__section::after {
-  content: "";
-  display: table;
-  clear: both;
+/* Largura máxima da figura do centro de distribuição */
+#centro-distribuicao {
+  max-width: 550px;
+  margin-inline: auto;
 }
 
 @media (max-width: 768px) {
-  .main {
-    background: #ffffff;
-  }
-
-  .intro-section__text {
-    text-indent: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .intro-section__text,
-  .article__text {
-    text-indent: 0;
+  .c-article-grid {
+    grid-template-columns: 1fr;
   }
 }
