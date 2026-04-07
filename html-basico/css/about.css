@@ -1,103 +1,36 @@
-:root {
-  /*Paleta tipográfica*/
-  --font-default: "Datatype", monospace;
-  --font-principal-title: "Archivo Black", sans-serif; 
-  --font-secondary-title:  "Roboto", sans-serif;   
-  --font-secondary-title-wgt: 900; 
-  --font-size-small: 0.8rem; 
-  
-  /*Paleta de Cores*/
-  --color-primary: #333;
-  --color-bkg-figures: #F2EDED;
-  --color-border: #CCC;
-  --color-base-footer: #777;
-
-  /*Tamanhos de imagens*/
-  --logo-width: 94px;
-
-  /*Espaçamento*/
-  --space-1: 8px;
-  --space-2: 16px;
-  --space-3: 32px;
-
-  /*Border-radius*/
-  --border-width: 1px;
-  --border-radius: 4px;
-}
-
-body {
-  color: var(--color-primary);
-  font-family: var(--font-default);   
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;    
-}
+/* Sobrescrita de estilos específicos para a página about */
 
 h1 {
   background-image: url(../img/sobre-background.jpg);
-  padding: 10px;    
-  font-family: var(--font-principal-title);    
+  background-size: cover;
+  background-position: center;
+  padding: var(--space-2);
 }
 
-h2 {
-  border-bottom: 2px groove #333;
-  margin-top: 30px;
-  font-family: var(--font-secondary-title);
-  font-weight: var(--font-secondary-title-wgt);
-}
-
-figure {
-  background-color: var(--color-bkg-figures);
-  border: 1px solid var(--color-border);
-  text-align: center;
-  padding: 15px;
-  margin: 30px;
-}
-
-figcaption {
-  font-style: italic;
-  margin-top: 10px;
-  font-family: var(--font-secondary-title);
-}
-
-p {
-  padding: 0 45px;    
-  text-indent: 15px;
-  text-align: justify;
-}
-
+/* Limpeza de estilos legados */
 #centro-distribuicao {
-  margin-right: auto;
-  margin-left: auto;
-  width: 550px;    
+  margin: var(--space-4) auto;
+  width: 100%;
+  max-width: 550px;
 }
 
 #familia-pelho {
-  margin: 0 0 10px 10px;
-  float: right;
+  margin: 0 0 var(--space-3) var(--space-3);
 }
 
-/*Componente Rodapé*/
-.rodape {
-  margin: var(--space-3) 0;
-  padding: var(--space-3) 0;
-  color: var(--color-base-footer);
-  border-top: var(--border-width) solid var(--color-border);
+/* Clearfix para o layout com float */
+.content-section--with-image::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.footer__container {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  justify-content: center;
+@media (max-width: 768px) {
+  h1 {
+    padding: var(--space-1);
+  }
+
+  #centro-distribuicao {
+    max-width: 100%;
+  }
 }
-
-.footer__logo {
-  width: var(--logo-width);
-}
-
-.footer_text {
-  font-size: var(--font-size-small);
-}
-
-
