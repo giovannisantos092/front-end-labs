@@ -1,131 +1,103 @@
 :root {
+  /*Paleta tipográfica*/
   --font-default: "Datatype", monospace;
-  --font-title-primary: "Archivo Black", sans-serif;
-  --font-title-secondary: "Roboto", sans-serif;
-  --font-title-secondary-weight: 900;
+  --font-principal-title: "Archivo Black", sans-serif; 
+  --font-secondary-title:  "Roboto", sans-serif;   
+  --font-secondary-title-wgt: 900; 
+  --font-size-small: 0.8rem; 
+  
+  /*Paleta de Cores*/
+  --color-primary: #333;
+  --color-bkg-figures: #F2EDED;
+  --color-border: #CCC;
+  --color-base-footer: #777;
 
-  --color-text: #333333;
-  --color-background-figure: #f2eded;
-  --color-border: #ccc;
-  --color-footer-text: #777;
-}
+  /*Tamanhos de imagens*/
+  --logo-width: 94px;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  /*Espaçamento*/
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 32px;
 
-html {
-  scroll-behavior: smooth;
+  /*Border-radius*/
+  --border-width: 1px;
+  --border-radius: 4px;
 }
 
 body {
-  font-family: var(--font-default);
-  color: var(--color-text);
-  max-width: 940px;
-  margin: 0 auto;
-  line-height: 1.6;
+  color: var(--color-primary);
+  font-family: var(--font-default);   
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;    
 }
 
 h1 {
-  font-family: var(--font-title-primary);
-  padding: 10px;
-  /* CORREÇÃO: Linhas de imagem de fundo removidas */
-  color: var(--color-text); /* CORREÇÃO: Alterado para preto para ser visível no fundo branco */
+  background-image: url(../img/sobre-background.jpg);
+  padding: 10px;    
+  font-family: var(--font-principal-title);    
 }
 
 h2 {
-  font-family: var(--font-title-secondary);
-  font-weight: var(--font-title-secondary-weight);
+  border-bottom: 2px groove #333;
   margin-top: 30px;
-  border-bottom: 2px groove var(--color-text);
-  padding-bottom: 5px;
-}
-
-p {
-  padding: 0 20px;
-  text-align: justify;
-  text-indent: 1em;
-  margin-top: 10px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-header img {
-  width: 60px;
-}
-
-main {
-  margin-top: 20px;
-}
-
-section {
-  margin-bottom: 30px;
+  font-family: var(--font-secondary-title);
+  font-weight: var(--font-secondary-title-wgt);
 }
 
 figure {
-  background-color: var(--color-background-figure);
+  background-color: var(--color-bkg-figures);
   border: 1px solid var(--color-border);
   text-align: center;
   padding: 15px;
-  margin: 30px auto;
-  max-width: 100%;
+  margin: 30px;
 }
 
 figcaption {
   font-style: italic;
   margin-top: 10px;
-  font-family: var(--font-title-secondary);
+  font-family: var(--font-secondary-title);
 }
 
-figure img {
-  max-width: 100%;
-  height: auto;
+p {
+  padding: 0 45px;    
+  text-indent: 15px;
+  text-align: justify;
 }
 
-section img[alt="Família Pelho"] {
+#centro-distribuicao {
+  margin-right: auto;
+  margin-left: auto;
+  width: 550px;    
+}
+
+#familia-pelho {
+  margin: 0 0 10px 10px;
   float: right;
-  margin: 0 0 10px 15px;
-  max-width: 250px;
 }
 
-ul {
-  padding: 0 40px;
-  margin-top: 15px;
+/*Componente Rodapé*/
+.rodape {
+  margin: var(--space-3) 0;
+  padding: var(--space-3) 0;
+  color: var(--color-base-footer);
+  border-top: var(--border-width) solid var(--color-border);
 }
 
-li {
-  margin-bottom: 8px;
-}
-
-a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-a:hover {
-  opacity: 0.7;
-}
-
-footer {
-  margin-top: 40px;
-  padding: 30px 0;
-  color: var(--color-footer-text);
-  border-top: 1px solid var(--color-border);
-}
-
-footer div {
+.footer__container {
   display: flex;
   align-items: center;
+  gap: var(--space-2);
+  justify-content: center;
 }
 
-footer img {
-  width: 80px;
-  margin-right: 20px;
+.footer__logo {
+  width: var(--logo-width);
 }
+
+.footer_text {
+  font-size: var(--font-size-small);
+}
+
 
