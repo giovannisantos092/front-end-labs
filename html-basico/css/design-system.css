@@ -1,5 +1,4 @@
-/* Mirror Fashion – Design System
-   Tokens: cores, tipografia, espaçamento, sombras, bordas, transições */
+
 
    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 
@@ -29,9 +28,9 @@
      --line-height-loose:  1.8;
    
      /* ── Paleta de cores ─────────────────────── */
-     --color-brand:        #1a1a2e;   /* navy – cor principal da marca */
+     --color-brand:        #1a1a2e;   
      --color-brand-mid:    #16213e;
-     --color-accent:       #e94560;   /* rose – CTA / destaque */
+     --color-accent:       #e94560;   
      --color-accent-dark:  #c73652;
    
      --color-text:         #222;
@@ -46,7 +45,7 @@
      --color-border-dark:  #ccc;
    
      /* Footer */
-     --color-base-footer:  #777;      /* alias legado mantido para compatibilidade */
+     --color-base-footer:  #777;      
      --color-footer-bg:    #1a1a2e;
      --color-footer-text:  #aaa;
      --color-footer-link:  #ccc;
